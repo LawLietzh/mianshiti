@@ -1,0 +1,17 @@
+long int pow（int x , int N）
+{ 
+   int ans,n;
+    ans = 1 ;
+    n = x;
+    while(N ！= 0)
+    {
+       if( N & 1 == 1)
+       {
+         ans = ans * n;
+       }
+       n = n*n;
+       N >>=1;
+    }
+    return ans;
+
+  }
